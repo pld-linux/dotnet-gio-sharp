@@ -5,11 +5,11 @@ Summary:	.NET language bindings for GIO
 Summary(pl.UTF-8):	Wiązania GIO dla .NET
 Name:		dotnet-gio-sharp
 Version:	0.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	gio-sharp-%{version}.tar.gz
-# Source0-md5:	f619624cad668b5c5c7f0f0f51a4616c
+# Source0-md5:	57b0189de1f43e90f795e0213500e807
 URL:		http://github.com/mono/gio-sharp/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -41,7 +41,7 @@ GIO# development files.
 Pliki programistyczne GIO#.
 
 %prep
-%setup -q -n mono-gio-sharp-4159f82/
+%setup -q -n mono-gio-sharp-017c8a5
 
 %build
 NOCONFIGURE=true ./autogen-2.22.sh
