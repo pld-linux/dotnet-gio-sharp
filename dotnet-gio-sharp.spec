@@ -4,7 +4,7 @@ Summary:	.NET language bindings for GIO
 Summary(pl.UTF-8):	Wiązania GIO dla .NET
 Name:		dotnet-gio-sharp
 Version:	0.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries
 Source0:	gio-sharp-%{version}.tar.gz
