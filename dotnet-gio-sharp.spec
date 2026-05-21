@@ -1,10 +1,12 @@
 #
+# managed dotnet code, no native debug sources
+%undefine	_debugsource_packages
 #
 Summary:	.NET language bindings for GIO
 Summary(pl.UTF-8):	Wiązania GIO dla .NET
 Name:		dotnet-gio-sharp
 Version:	0.3
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries
 Source0:	gio-sharp-%{version}.tar.gz
@@ -47,7 +49,8 @@ NOCONFIGURE=true ./autogen-2.22.sh
 %{__aclocal}
 %{__autoconf}
 %{__automake}
-%configure
+%configure \
+	CSC=/usr/bin/mcs
 %{__make} -j1
 
 %install
